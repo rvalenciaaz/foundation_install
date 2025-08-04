@@ -51,9 +51,9 @@ bash download_hf_evo.sh
    python evo_embed_hf_offline.py
    ```
 
-   **For ESM2:**
+**For ESM2:**
 
-   Perform the same steps until 3, and then you can skip 4 (you can use the same environment and it should be fine)
+Perform the same steps until 3, and then you can skip 4 (you can use the same environment and it should be fine)
 
 5) Download the model folder (from facebook) using
 
