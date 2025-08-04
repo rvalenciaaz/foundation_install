@@ -7,7 +7,9 @@ How to install ESM2 and other models locally via HF
 
 2) Create a environment using mamba:
 
+```
 mamba create -n model_env python==3.10
+```
 
 (it can be a Python >=3.10 and <=3.12)
 
