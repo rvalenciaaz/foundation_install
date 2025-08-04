@@ -17,8 +17,7 @@ mamba create -n model_env python==3.10
 
 ```
 pip3 install torch torchvision torchaudio
-pip3 install transformers
-pip3 install hf_transfer
+pip3 install transformers huggingface_hub hf_transfer
 ```
 
 4) For Evo1, two libraries are important:
