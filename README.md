@@ -39,7 +39,7 @@ bash download_hf_evo.sh
      ```  
      cp ~/workingfolder/models/evo-1-131k-base/*.py  ~/.cache/huggingface/modules/transformers_modules/evo-1-131k-base/
      ```
-   - Second, it may happen that when initialising the model using the python script, it doesn't recognise crypt.h as available in the include folder. It is caused by a slightly different include folder is used in the calling. To fix it, just symlink crypt.h to the right folder:
+   - Second, it may happen that when initialising the model using the python script, it doesn't recognise crypt.h as available in the include folder. It is caused by a slightly different include folder being used in the call. To fix it, just symlink or hardcopy crypt.h to the right folder:
 
      ```  
      ln -s /home/yourusername/.local/share/mamba/envs/esm2_env/include/crypt.h /home/yourusername/.local/share/mamba/envs/esm2_env/include/python3.x/
