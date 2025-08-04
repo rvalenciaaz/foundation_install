@@ -1,5 +1,5 @@
 # foundation_install
-How to install ESM2 and other models locally via HF 
+How to install ESM2 and other models locally via Hugging Face (HF) 
 
 1) First, check that cuda-toolkit and nvcc are installed system-wide. Use cuda-toolkit version >=12.6.
 
