@@ -15,15 +15,17 @@ mamba create -n model_env python==3.10
 
 3) Then, install pytorch, transformers, and hf_transfer (for faster model tensors download):
 
+```
 pip3 install torch torchvision torchaudio
 pip3 install transformers
 pip3 install hf_transfer
+```
 
 4) For Evo1, two libraries are important:
-
+```
 mamba install libxcrypt
 pip install --upgrade flash-attn==2.7.4.post1 --no-build-isolation
-
+```
 5) Download the model folder using
 
 bash 
