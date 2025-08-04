@@ -26,11 +26,27 @@ pip3 install hf_transfer
 mamba install libxcrypt
 pip install --upgrade flash-attn==2.7.4.post1 --no-build-isolation
 ```
-5) Download the model folder using
+5) Download the model folder (from togetherAI) using
 
-bash 
+```
+bash download_hf_evo.sh
+```
+(You can change the version inside the bash sript to download a lighter version) 
 
 6) There are two parts that might be tricky:
-   - First, there are py libraries in the model folder that are needed for initialising the model  
-
+   - First, there are py libraries in the model folder that are needed for initialising the model. These can be symlinked or hardcopied to the corresponding include folder:
+  
+     ```  
+     cp ~/workingfolder/models/evo-1-131k-base/*.py  ~/.cache/huggingface/modules/transformers_modules/evo-1-131k-base/
+     ```
    - Second, it may happen that when initialising the model using the python script, it doesn't recognise crypt.h as available in the include folder. It is caused by a slightly different include folder is used in the calling. To fix it, just symlink crypt.h to the right folder:
+
+     ```  
+     ln -s /home/yourusername/.local/share/mamba/envs/esm2_env/include/crypt.h /home/yourusername/.local/share/mamba/envs/esm2_env/include/python3.x/
+     ```
+    (x should be your version)
+7) Execute the python script with the embedding pipeline and see if the output `embeddings.tsv` is correct:
+
+   ```
+   python evo_embed_hf_offline.py
+   ```
