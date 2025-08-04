@@ -64,6 +64,6 @@ bash download_hf_esm2.sh
 
 6) Execute the python script with the embedding pipeline and see if the output `embeddings.tsv` is correct:
 
-   ```
-   python esm2_embed_hf_offline.py
-   ```
+```
+python esm2_embed_hf_offline.py
+```
