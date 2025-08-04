@@ -50,3 +50,20 @@ bash download_hf_evo.sh
    ```
    python evo_embed_hf_offline.py
    ```
+
+   **For ESM2:**
+
+   Perform the same steps until 3, and then you can skip 4 (you can use the same environment and it should be fine)
+
+5) Download the model folder (from facebook) using
+
+```
+bash download_hf_esm2.sh
+```
+(You can change the version inside the bash sript to download a lighter version) 
+
+6) Execute the python script with the embedding pipeline and see if the output `embeddings.tsv` is correct:
+
+   ```
+   python esm2_embed_hf_offline.py
+   ```
