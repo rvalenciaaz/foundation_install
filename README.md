@@ -1,7 +1,7 @@
 # foundation_install
 How to install ESM2 and other models locally via HF 
 
-1) First, check that cuda-toolkit and nvcc are installed system-wide. Use cuda-toolkit version >=12.6
+1) First, check that cuda-toolkit and nvcc are installed system-wide. Use cuda-toolkit version >=12.6.
 
 **For Evo1:**
 
