@@ -66,3 +66,11 @@ bash download_hf_esm2.sh
 ```
 python esm2_embed_hf_offline.py
 ```
+
+**Finetuning ESM2 for sequence classification using Transformers**
+
+
+```
+pip3 install evaluate accelerate peft bitsandbytes
+```
+
