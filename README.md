@@ -9,6 +9,7 @@ How to install ESM2 and other models locally via Hugging Face (HF)
 
 ```
 mamba create -n model_env python==3.10
+mamba activate model_env
 ```
 
 (it can be a Python >=3.10 and <=3.12)
