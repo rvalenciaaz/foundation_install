@@ -78,4 +78,5 @@ pip3 install evaluate accelerate peft bitsandbytes
 mamba install pandas polars scikit-learn matplotlib seaborn plotly
 pip3 install "torch==2.7.*" --index-url https://download.pytorch.org/whl/cu126
 pip3 install pyro-ppl
+pip3 install optuna
 ```
