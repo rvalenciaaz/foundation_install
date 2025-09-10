@@ -74,4 +74,6 @@ python esm2_embed_hf_offline.py
 ```
 pip3 install evaluate accelerate peft bitsandbytes
 ```
-
+```
+mamba install pandas polars scikit-learn matplotlib seaborn plotly
+```
